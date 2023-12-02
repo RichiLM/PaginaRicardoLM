@@ -69,11 +69,6 @@
     margin-bottom: 1rem;
 }
 
-.campo input,
-.campo textarea {
-    width: 100%;
-}
-
 .campo select {
     background-color: transparent;
     appearance: unset;
