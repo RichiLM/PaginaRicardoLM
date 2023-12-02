@@ -1,0 +1,338 @@
+/* Globales */
+:root {
+    --fuenteHeadings: 'Oswald', sans-serif;
+    --fuenteNormal: 'Montserrat', sans-serif;
+
+    --blanco: #FFFFFF;
+    --negro: #000000;
+    --gris: #B4B4B4;
+    --verde: #15F51B;
+    --bgBoton: #6322E7;
+    --botonHover: #9469EC;
+}
+
+html{
+    font-size: 62.5%; /* 1 rem = 10px */
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuenteNormal);
+    font-size: 1.8rem;
+}
+
+h1 {font-size: 4rem;}
+h2 {font-size: 3.5rem;}
+h3 {font-size: 2.8rem;}
+h4 {font-size: 2.2rem;}
+
+h2, h3, h4 {
+    font-family: var(--fuenteHeadings);
+}
+
+p {line-height: 1.8;}
+
+a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+img,
+.video {
+    width: 100%;
+}
+
+/* Utilidades */
+
+.container {
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.white-text {
+    color: var(--blanco);
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.boton {
+    border: none;
+    background-color: var(--bgBoton);
+    padding: 1rem 2rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    color: var(--blanco);
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.5s;
+}
+
+.boton-flex {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.boton:hover {
+    background-color: var(--botonHover);
+}
+
+/* Header */
+
+.banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 60rem;
+}
+
+.webp .banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondo1.webp);
+}
+
+.no-webp .banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/fondo1.jpg);
+}
+
+@media (min-width: 768px) {
+    .banner {
+        height: 50rem;
+    }
+}
+
+.header {
+    padding-top: 1rem;
+}
+
+.header, .navegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .header, .navegacion {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.logo {
+    margin: 2rem 0;
+}
+
+.logo__titulo {
+    font-family: var(--fuenteHeadings);
+    font-size: 4rem;
+    transition: font-size 1s;
+}
+
+.logo__weight {
+    font-size: 4.5rem;
+    transition: font-size 1s;
+}
+
+.logo__titulo:hover,
+.logo__weight:hover {
+    font-size: 4.7rem;
+}
+
+.navegacion__enlace {
+    padding: .5rem;
+    font-size: 2rem;
+    transition: font-size 1s;
+    border-bottom: 1px solid var(--blanco);
+}
+
+.navegacion__enlace--activado {
+    font-weight: bold;
+}
+
+.navegacion__enlace:nth-child(1){
+    padding-top: 0;
+}
+
+.navegacion__enlace:hover,
+.footer__derechos a:hover {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .navegacion__enlace:nth-child(1){
+        padding-top: .5rem;
+    }
+
+    .navegacion__enlace {
+        margin-right: 2rem;
+    }
+
+    .navegacion__enlace:nth-child(4) {
+        margin-right: 0;
+    }
+}
+
+/* Hero */
+
+.hero__titulo {
+    margin-top: 10rem;
+}
+
+@media (min-width: 768px) {
+    .hero__titulo {
+        font-size: 5.5rem;
+    }
+}
+
+/* Descripción */
+
+.dtitulo {
+    margin-top: 6rem;
+}
+
+.description__text p,
+.celulares__description p {
+    text-align: justify;
+}
+
+@media (min-width: 768px) {
+    .description {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 2rem;
+    }
+
+    .description__video {
+        margin-top: 7rem;
+    }
+}
+
+/* Gama celulares */
+
+.celulares,
+.tendencias {
+    margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .celulares {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        grid-auto-flow: column;
+        column-gap: 2rem;
+    }
+
+    .celulares__description {
+        grid-column: 2 / 3;
+    }
+
+    .celulares__description h2,
+    .dtitulo {
+        text-align: left;
+    }
+
+    .celulares__gama {
+        margin: auto;
+    }
+}
+
+/* Celulares */
+
+.tendencias__videos {
+    display: grid;
+    gap: 2rem;
+}
+
+
+@media (min-width: 768px) {
+    .tendencias__videos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.tendencias__video h3 {
+    margin-top: 1.5rem;
+}
+
+.tendencias__video p {
+    padding: 0 2rem;
+}
+
+/* Creditos */
+
+.creditos__info p {
+    text-align: justify;
+}
+
+@media (min-width: 768px) {
+    .creditos {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 2rem;
+    }
+
+    .creditos__img {
+        margin: auto 0;
+    }
+}
+
+/* Footer */
+
+.footer {
+    height: 25rem;
+    background-color: var(--negro);
+    margin-top: 5rem;
+}
+
+.footer__contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__derechos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__derechos p {
+    text-align: center;
+}
+
+.footer__derechos a {
+    transition: font-size 1s;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        height: 12rem;
+    }
+
+    .footer__contenido {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer__derechos p {
+        margin-bottom: 0;
+    }
+}

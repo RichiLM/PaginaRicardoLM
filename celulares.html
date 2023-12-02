@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Store</title>
+    <meta name="description" content="Página de venta de celulares PhoneStore">
+    <link rel="icon" href="img/logoIcon.png">
+    <link rel="preload" href="css/normalice.css" as="style">
+    <link rel="stylesheet" href="css/normalice.css">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preload" href="css/celulares.css" as="style">
+    <link rel="stylesheet" href="css/celulares.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="banner">
+        <header class="container header">
+            <div class="logo">
+                <a class="logo__titulo" href="index.html">Phone<span class="logo__weight">Store</span></a>
+            </div>
+            <nav class="navegacion">
+                <a class="navegacion__enlace" href="nosotros.html">¿Quiénes somos?</a>
+                <a class="navegacion__enlace navegacion__enlace--activado" href="celulares.html">Nuestros celulares</a>
+                <a class="navegacion__enlace" href="contacto.html">Contacto</a>
+                <a class="navegacion__enlace" href="creditos.html">Créditos</a>
+            </nav>
+        </header>
+        <section class="container hero">
+            <div class="htitulo white-text center-text">
+                <h1 class="hero__titulo">Dispositivos moviles últimos en tecnología</h1>
+            </div>
+        </section>
+    </div>
+    <main class="container">
+        <h2 class="center-text">Conoce nuestros celulares</h2>
+        <h3 class="center-text">Celulares en tendencia</h3>
+        <div class="elemento-cuadricula bd pat-anterior carrusel"> <!-- Carrusel -->
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="celular">
+                            <a target="_blank" href="https://rog.asus.com/es/phones/rog-phone-7/">
+                                <picture>
+                                    <source srcset="img/celulares/asus.webp" type="image/webp">
+                                    <img class="celular__imagen" src="img/celulares/asus.png" alt="Celular">
+                                </picture>
+                            </a>
+                            <div class="celular__description">
+                                <h4 class="center-text no-margin">Asus Rog Phone 7 Series</h4>
+                                <p class="">Características del modelo:</p>
+                                <ul>
+                                    <li>Procesador Qualcomm Snapdragon® 8 Gen 2, SM8550, Qcta-core</li>
+                                    <li>6 RAM</li>
+                                    <li>512 GB ROM</li>
+                                    <li>Pantalla 2448 x 1080 px 144 Hz</li>
+                                    <li>Android 13</li>
+                                </ul>
+                                <p><span class="bold-text">Precio:</span> $10,000.00 MXN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="celular">
+                            <a target="_blank" href="https://www.samsung.com/mx/smartphones/galaxy-s23-ultra/">
+                                <picture>
+                                    <source srcset="img/celulares/samsung.webp" type="image/webp">
+                                    <img class="celular__imagen" src="img/celulares/samsung.png" alt="Celular">
+                                </picture>
+                            </a>
+                            <div class="celular__description">
+                                <h4 class="center-text no-margin">Samsumng Galaxy S23 Ultra</h4>
+                                <p class="">Características del modelo:</p>
+                                <ul>
+                                    <li>Octa-Core Procesador 3.36 GHz, 2.8 GHz, 2 GHz</li>
+                                    <li>8 RAM</li>
+                                    <li>256 GB ROM</li>
+                                    <li>Pantalla 3,088 x 1,440</li>
+                                    <li>Android</li>
+                                </ul>
+                                <p><span class="bold-text">Precio:</span> $11,000.00 MXN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="celular">
+                            <a target="_blank" href="https://store.google.com/es/product/pixel_8_specs?hl=es&pli=1">
+                                <picture>
+                                    <source srcset="img/celulares/google.webp" type="image/webp">
+                                    <img class="celular__imagen" src="img/celulares/google.png" alt="Celular">
+                                </picture>
+                            </a>
+                            <div class="celular__description">
+                                <h4 class="center-text no-margin">Google Pixel 8</h4>
+                                <p class="">Características del modelo:</p>
+                                <ul>
+                                    <li>Procesador Qualcomm Snapdragon® 8 Gen 2, SM8550, Qcta-core</li>
+                                    <li>8 RAM</li>
+                                    <li>256 GB ROM</li>
+                                    <li>Pantalla 2400 x 1080 px</li>
+                                    <li>Android 14</li>
+                                </ul>
+                                <p><span class="bold-text">Precio:</span> $10,000.00 MXN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="celular">
+                            <a target="_blank" href="https://www.apple.com/mx/iphone-15-pro/">
+                                <picture>
+                                    <source srcset="img/celulares/apple.webp" type="image/webp">
+                                    <img class="celular__imagen" src="img/celulares/apple.jpg" alt="Celular">
+                                </picture>
+                            </a>
+                            <div class="celular__description">
+                                <h4 class="center-text no-margin">Apple iPhone 15 Pro</h4>
+                                <p class="">Características del modelo:</p>
+                                <ul>
+                                    <li>Procesador A17 pro de Apple</li>
+                                    <li>8 RAM</li>
+                                    <li>512 GB ROM</li>
+                                    <li>Pantalla 2448 x 1080</li>
+                                    <li>Android 13</li>
+                                </ul>
+                                <p><span class="bold-text">Precio:</span> $18,000.00 MXN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="celular">
+                            <a target="_blank" href="https://www.oppo.com/mx/smartphones/series-find-x/find-x5-pro/">
+                                <picture>
+                                    <source srcset="img/celulares/oppo.webp" type="image/webp">
+                                    <img class="celular__imagen" src="img/celulares/oppo.jpeg" alt="Celular">
+                                </picture>
+                            </a>
+                            <div class="celular__description">
+                                <h4 class="center-text no-margin">Oppo Find x5 Pro</h4>
+                                <p class="">Características del modelo:</p>
+                                <ul>
+                                    <li>Qualcomm Snapdragon 8 Gen 1</li>
+                                    <li>8 RAM</li>
+                                    <li>512 GB ROM</li>
+                                    <li>Pantalla 2448 x 1080 px 120 Hz</li>
+                                    <li>Android 12</li>
+                                </ul>
+                                <p><span class="bold-text">Precio:</span> $18,000.00 MXN</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </main>
+    <section class="container">
+        <h3 class="center-text">Más modelos disponibles</h3>
+        <div class="stock">
+            <div class="stock-element">
+                <picture>
+                    <source srcset="img/celulares/moto1.webp" type="image/webp">
+                    <img src="img/celulares/moto1.jpg" alt="Celular">
+                </picture>
+                <h4 class="center-text">Motorola G32</h4>
+                <p><span class="bold-text">Precio:</span> $6000.00 MXN</p>
+                <p><span class="bold-text">Stock:</span> 12 unidades</p>
+                <div class="boton-flex">
+                    <a class="boton" href="celulares.html">Ver más</a>
+                </div>
+            </div>
+            <div class="stock-element">
+                <picture>
+                    <source srcset="img/celulares/moto2.webp" type="image/webp">
+                    <img src="img/celulares/moto2.jpg" alt="Celular">
+                </picture>
+                <h4 class="center-text">Motorola G23</h4>
+                <p><span class="bold-text">Precio:</span> $8500.00 MXN</p>
+                <p><span class="bold-text">Stock:</span> 34 unidades</p>
+                <div class="boton-flex">
+                    <a class="boton" href="celulares.html">Ver más</a>
+                </div>
+            </div>
+            <div class="stock-element">
+                <picture>
+                    <source srcset="img/celulares/huawei1.webp" type="image/webp">
+                    <img src="img/celulares/huawei1.png" alt="Celular">
+                </picture>
+                <h4 class="center-text">Huawei Mate X3</h4>
+                <p><span class="bold-text">Precio:</span> $9800.00 MXN</p>
+                <p><span class="bold-text">Stock:</span> 87 unidades</p>
+                <div class="boton-flex">
+                    <a class="boton" href="celulares.html">Ver más</a>
+                </div>
+            </div>
+            <div class="stock-element">
+                <picture>
+                    <source srcset="img/celulares/huawei2.webp" type="image/webp">
+                    <img src="img/celulares/huawei2.png" alt="Celular">
+                </picture>
+                <h4 class="center-text">Huawei Nova Y90</h4>
+                <p><span class="bold-text">Precio:</span> $12,000.00 MXN</p>
+                <p><span class="bold-text">Stock:</span> 58 unidades</p>
+                <div class="boton-flex">
+                    <a class="boton" href="celulares.html">Ver más</a>
+                </div>
+            </div>
+            <div class="stock-element">
+                <picture>
+                    <source srcset="img/celulares/xiaomi1.webp" type="image/webp">
+                    <img src="img/celulares/xiaomi1.png" alt="Celular">
+                </picture>
+                <h4 class="center-text">Xiaomi 13T</h4>
+                <p><span class="bold-text">Precio:</span> $7500.00 MXN</p>
+                <p><span class="bold-text">Stock:</span> 23 unidades</p>
+                <div class="boton-flex">
+                    <a class="boton" href="celulares.html">Ver más</a>
+                </div>
+            </div>
+            <div class="stock-element">
+                <picture>
+                    <source srcset="img/celulares/xiaomi2.webp" type="image/webp">
+                    <img src="img/celulares/xiaomi2.jpg" alt="Celular">
+                </picture>
+                <h4 class="center-text">Motorola G32</h4>
+                <p><span class="bold-text">Precio:</span> $9000.00 MXN</p>
+                <p><span class="bold-text">Stock:</span> 47 unidades</p>
+                <div class="boton-flex">
+                    <a class="boton" href="celulares.html">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer__contenido">
+            <div class="logo">
+                <a class="logo__titulo logo__footer" href="index.html">Phone<span class="logo__weight">Store</span></a>
+            </div>
+            <div class="footer__d">
+                <div class="footer__derechos">
+                    <p class="white-text">Todos los derechos reservados &copy; 2023 <span class="bold-text">PhoneStore</span></p>
+                    <a href="https://www.gmail.com/mail/help/intl/es/about.html?iframe">phonestore@gmail.com.mx</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/carrusel.js"></script>
+    <script src="js/modernizr.js"></script>
+</body>
+</html>

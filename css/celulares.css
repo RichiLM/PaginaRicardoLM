@@ -1,0 +1,71 @@
+/* Celulares */
+.celular {
+    padding: 0 5rem;
+}
+
+.swiper {
+    height: 58rem;
+}
+
+.celular {
+    display: flex;
+    flex-direction: column;
+}
+
+.celular__imagen {
+    transition: width 1s, margin-left 1s;
+}
+
+.celular__imagen:hover {
+    width: 110%;
+    margin-left: -1rem;
+}
+
+.celular__description p {
+    line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+    .celular {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 1rem;
+    }
+
+    .celular__description {
+        margin: auto 0;
+    }
+}
+
+/* Stock */
+.stock {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    row-gap: 3rem;
+}
+
+.stock-element {
+    padding: 1rem;
+    border: 1px solid var(--gris);
+    border-radius: .5rem;
+    transition: border 1s;
+}
+
+.stock-element:hover {
+    border: 1px solid var(--negro);
+}
+
+.stock-element .boton-flex {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .stock {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .stock-element p {
+        text-align: center;
+    }
+}
