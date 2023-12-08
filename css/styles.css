@@ -294,6 +294,28 @@ img,
     }
 }
 
+/* Usuarios */
+
+.img-avatar {
+    max-width: 15rem;
+}
+
+.cusuario {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .usuario {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+        column-gap: 2rem;
+    }
+
+    .usuario__descripcion {
+        text-align: left;
+    }
+}
+
 /* Footer */
 
 .footer {
