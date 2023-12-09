@@ -53,5 +53,11 @@
     </footer>
     <script src="js/modernizr.js"></script>
     <script src="js/users.js" type="module"></script>
+    <script>
+        function mostrarDetalles(userId) {
+            console.log(`Mostrar detalles para el usuario con ID: ${userId}`);
+            window.location.href = `usuarioDescripcion.html?userId=${userId}`;
+        }
+    </script>
 </body>
 </html>

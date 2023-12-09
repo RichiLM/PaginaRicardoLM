@@ -323,6 +323,17 @@ img,
         column-gap: 2rem;
     }
 
+    .usuario-individual {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+    .usuario-individual .usuario__imagen {
+        border: none;
+        text-align: right;
+    }
+
     .usuario__descripcion {
         text-align: left;
     }
