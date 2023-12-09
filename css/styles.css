@@ -185,7 +185,7 @@ img,
         margin-right: 2rem;
     }
 
-    .navegacion__enlace:nth-child(4) {
+    .navegacion__enlace:nth-child(5) {
         margin-right: 0;
     }
 }
@@ -193,12 +193,13 @@ img,
 /* Hero */
 
 .hero__titulo {
-    margin-top: 10rem;
+    margin-top: 6rem;
 }
 
 @media (min-width: 768px) {
     .hero__titulo {
         font-size: 5.5rem;
+        margin-top: 10rem;
     }
 }
 
@@ -297,7 +298,18 @@ img,
 /* Usuarios */
 
 .img-avatar {
-    max-width: 15rem;
+    max-width: 17rem;
+    margin-top: 1.5rem;
+}
+
+.usuario__imagen {
+    border: 1px solid var(--gris);
+    border-radius: 1rem;
+    transition: border-color 1s;
+}
+
+.usuario__imagen:hover {
+    border-color: var(--negro);
 }
 
 .cusuario {

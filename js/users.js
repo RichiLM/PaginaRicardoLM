@@ -1,4 +1,4 @@
-const apiURL = 'https://reqres.in/api/users?page=2';
+const apiURL = 'https://reqres.in/api/users?page=1';
 
 const XML = new XMLHttpRequest();
 
@@ -11,7 +11,9 @@ function onRequestHandler() {
 
         const template = data.map((user) => 
         `<div class="usuario__imagen">
-            <img class="img-avatar" src="${user.avatar}" alt ="Avatar usuario">
+            <a href="#">
+                <img class="img-avatar" src="${user.avatar}" alt ="Avatar usuario">
+            </a>
         </div>
         <div class="usuario__descripcion">
             <p><span class="bold-text">Nombre:</span> ${user.first_name}</p>
